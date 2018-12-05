@@ -1,7 +1,7 @@
 {
   "name": "@xgd/finite-state-machine",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.0",
+  "description": "Efficient and simple state machines in typescript.",
   "keywords": [],
   "main": "dist/xgd-finite-state-machine.umd.js",
   "module": "dist/xgd-finite-state-machine.es5.js",
@@ -14,7 +14,7 @@
     "type": "git",
     "url": ""
   },
-  "license": "SEE LICENSE IN LICENSE.md",
+  "license": "MIT",
   "engines": {
     "node": ">=6.0.0"
   },
