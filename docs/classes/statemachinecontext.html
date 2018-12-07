@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>AutomatonBase | @xgd/finite-state-machine</title>
+	<title>StateMachineContext | @xgd/finite-state-machine</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type="text/css">/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
@@ -909,52 +909,11 @@ img { max-width: 100%; }
 </header>
 <nav class="tsd-navigation secondary">
 	<ul>
-		<li class="current tsd-kind-class tsd-has-type-parameter">
-			<a href="automatonbase.html" class="tsd-kind-icon">Automaton<wbr>Base</a>
-			<ul>
-				<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-					<a href="automatonbase.html#constructor" class="tsd-kind-icon">constructor</a>
-				</li>
-				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a href="automatonbase.html#edges" class="tsd-kind-icon">edges</a>
-				</li>
-				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-					<a href="automatonbase.html#id" class="tsd-kind-icon">id</a>
-				</li>
-				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-					<a href="automatonbase.html#state" class="tsd-kind-icon">state</a>
-				</li>
-				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-					<a href="automatonbase.html#addedge" class="tsd-kind-icon">add<wbr>Edge</a>
-				</li>
-				<li class=" tsd-kind-method tsd-parent-kind-class">
-					<a href="automatonbase.html#castevent" class="tsd-kind-icon">cast<wbr>Event</a>
-				</li>
-				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-					<a href="automatonbase.html#hasownproperty" class="tsd-kind-icon">has<wbr>Own<wbr>Property</a>
-				</li>
-				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-					<a href="automatonbase.html#isprototypeof" class="tsd-kind-icon">is<wbr>Prototype<wbr>Of</a>
-				</li>
-				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-					<a href="automatonbase.html#propertyisenumerable" class="tsd-kind-icon">property<wbr>IsEnumerable</a>
-				</li>
-				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-					<a href="automatonbase.html#tolocalestring" class="tsd-kind-icon">to<wbr>Locale<wbr>String</a>
-				</li>
-				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-					<a href="automatonbase.html#tostring" class="tsd-kind-icon">to<wbr>String</a>
-				</li>
-				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-					<a href="automatonbase.html#valueof" class="tsd-kind-icon">value<wbr>Of</a>
-				</li>
-			</ul>
+		<li class=" tsd-kind-class">
+			<a href="automationinterface.html" class="tsd-kind-icon">Automation<wbr>Interface</a>
 		</li>
 		<li class=" tsd-kind-class tsd-has-type-parameter">
 			<a href="dictionary.html" class="tsd-kind-icon">Dictionary</a>
-		</li>
-		<li class=" tsd-kind-class">
-			<a href="error_code.html" class="tsd-kind-icon">ERROR_<wbr>CODE</a>
 		</li>
 		<li class=" tsd-kind-class">
 			<a href="fsmerror.html" class="tsd-kind-icon">FSMError</a>
@@ -962,11 +921,28 @@ img { max-width: 100%; }
 		<li class=" tsd-kind-class">
 			<a href="fsmevent.html" class="tsd-kind-icon">FSMEvent</a>
 		</li>
+		<li class=" tsd-kind-class">
+			<a href="fsm_error_code.html" class="tsd-kind-icon">FSM_<wbr>ERROR_<wbr>CODE</a>
+		</li>
 		<li class=" tsd-kind-class tsd-has-type-parameter">
 			<a href="statebase.html" class="tsd-kind-icon">State<wbr>Base</a>
 		</li>
-		<li class=" tsd-kind-class">
-			<a href="thing.html" class="tsd-kind-icon">Thing</a>
+		<li class="current tsd-kind-class tsd-has-type-parameter">
+			<a href="statemachinecontext.html" class="tsd-kind-icon">State<wbr>Machine<wbr>Context</a>
+			<ul>
+				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a href="statemachinecontext.html#_currentstate" class="tsd-kind-icon">_current<wbr>State</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a href="statemachinecontext.html#_transitions" class="tsd-kind-icon">_transitions</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a href="statemachinecontext.html#addtransition" class="tsd-kind-icon">add<wbr>Transition</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class">
+					<a href="statemachinecontext.html#castevent" class="tsd-kind-icon">cast<wbr>Event</a>
+				</li>
+			</ul>
 		</li>
 		<li class=" tsd-kind-interface tsd-has-type-parameter">
 			<a href="../interfaces/idictionary.html" class="tsd-kind-icon">IDictionary</a>
@@ -978,6 +954,9 @@ img { max-width: 100%; }
 			<a href="../interfaces/xgdfinitestatemachine.html" class="tsd-kind-icon">XGDFinite<wbr>State<wbr>Machine</a>
 		</li>
 		<li class=" tsd-kind-function tsd-is-not-exported">
+			<a href="../globals.html#exists" class="tsd-kind-icon">EXISTS</a>
+		</li>
+		<li class=" tsd-kind-function tsd-is-not-exported">
 			<a href="../globals.html#generateid" class="tsd-kind-icon">generateID</a>
 		</li>
 	</ul>
@@ -987,9 +966,9 @@ img { max-width: 100%; }
 		<section class="tsd-panel tsd-comment">
 			<div class="tsd-comment tsd-typography">
 				<div class="lead">
-					<p>base class for all automata. It
-						provides a method addEdge for its subclasses.
-					In addition AutomatonBase implements IEventSink:</p>
+					<p>Base class for all state machines. It provides
+						a method to add transitions for its subclasses.
+					In addition StateMachineContext implements IEventSink:</p>
 				</div>
 			</div>
 		</section>
@@ -997,7 +976,7 @@ img { max-width: 100%; }
 			<h3>Type parameters</h3>
 			<ul class="tsd-type-parameters">
 				<li>
-					<h4>AI<span class="tsd-signature-symbol">: </span><a href="thing.html" class="tsd-signature-type">Thing</a></h4>
+					<h4>AI<span class="tsd-signature-symbol">: </span><a href="automationinterface.html" class="tsd-signature-type">AutomationInterface</a></h4>
 				</li>
 			</ul>
 		</section>
@@ -1005,12 +984,7 @@ img { max-width: 100%; }
 			<h3>Hierarchy</h3>
 			<ul class="tsd-hierarchy">
 				<li>
-					<a href="thing.html" class="tsd-signature-type">Thing</a>
-					<ul class="tsd-hierarchy">
-						<li>
-							<span class="target">AutomatonBase</span>
-						</li>
-					</ul>
+					<span class="target">StateMachineContext</span>
 				</li>
 			</ul>
 		</section>
@@ -1020,102 +994,46 @@ img { max-width: 100%; }
 				<li><a href="../interfaces/ieventsink.html" class="tsd-signature-type">IEventSink</a></li>
 			</ul>
 		</section>
-		<section class="tsd-panel tsd-kind-class tsd-has-type-parameter">
-			<h3 class="tsd-before-signature">Indexable</h3>
-			<div class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">any</span></div>
-			<div class="tsd-comment tsd-typography">
-				<div class="lead">
-					<p>base class for all automata. It
-						provides a method addEdge for its subclasses.
-					In addition AutomatonBase implements IEventSink:</p>
-				</div>
-			</div>
-		</section>
 		<section class="tsd-panel-group tsd-index-group">
 			<h2>Index</h2>
 			<section class="tsd-panel tsd-index-panel">
 				<div class="tsd-index-content">
-					<section class="tsd-index-section ">
-						<h3>Constructors</h3>
-						<ul class="tsd-index-list">
-							<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="automatonbase.html#constructor" class="tsd-kind-icon">constructor</a></li>
-						</ul>
-					</section>
-					<section class="tsd-index-section ">
+					<section class="tsd-index-section tsd-is-private-protected">
 						<h3>Properties</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="automatonbase.html#edges" class="tsd-kind-icon">edges</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="automatonbase.html#id" class="tsd-kind-icon">id</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="automatonbase.html#state" class="tsd-kind-icon">state</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="statemachinecontext.html#_currentstate" class="tsd-kind-icon">_current<wbr>State</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="statemachinecontext.html#_transitions" class="tsd-kind-icon">_transitions</a></li>
 						</ul>
 					</section>
 					<section class="tsd-index-section ">
 						<h3>Methods</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="automatonbase.html#addedge" class="tsd-kind-icon">add<wbr>Edge</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-class"><a href="automatonbase.html#castevent" class="tsd-kind-icon">cast<wbr>Event</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="automatonbase.html#hasownproperty" class="tsd-kind-icon">has<wbr>Own<wbr>Property</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="automatonbase.html#isprototypeof" class="tsd-kind-icon">is<wbr>Prototype<wbr>Of</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="automatonbase.html#propertyisenumerable" class="tsd-kind-icon">property<wbr>IsEnumerable</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="automatonbase.html#tolocalestring" class="tsd-kind-icon">to<wbr>Locale<wbr>String</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="automatonbase.html#tostring" class="tsd-kind-icon">to<wbr>String</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="automatonbase.html#valueof" class="tsd-kind-icon">value<wbr>Of</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="statemachinecontext.html#addtransition" class="tsd-kind-icon">add<wbr>Transition</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="statemachinecontext.html#castevent" class="tsd-kind-icon">cast<wbr>Event</a></li>
 						</ul>
 					</section>
 				</div>
 			</section>
 		</section>
-		<section class="tsd-panel-group tsd-member-group ">
-			<h2>Constructors</h2>
-			<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-				<a name="constructor" class="tsd-anchor"></a>
-				<h3>constructor</h3>
-				<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-					<li class="tsd-signature tsd-kind-icon">new <wbr>Automaton<wbr>Base<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="automatonbase.html" class="tsd-signature-type">AutomatonBase</a></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<p>Overrides <a href="thing.html">Thing</a>.<a href="thing.html#constructor">constructor</a></p>
-							<ul>
-								<li>Defined in xgd-finite-state-machine.ts:195</li>
-							</ul>
-						</aside>
-						<h4 class="tsd-returns-title">Returns <a href="automatonbase.html" class="tsd-signature-type">AutomatonBase</a></h4>
-					</li>
-				</ul>
-			</section>
-		</section>
-		<section class="tsd-panel-group tsd-member-group ">
+		<section class="tsd-panel-group tsd-member-group tsd-is-private-protected">
 			<h2>Properties</h2>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-				<a name="edges" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagPrivate">Private</span> edges</h3>
-				<div class="tsd-signature tsd-kind-icon">edges<span class="tsd-signature-symbol">:</span> <a href="dictionary.html" class="tsd-signature-type">Dictionary</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">AI</span><span class="tsd-signature-symbol">, </span><a href="dictionary.html" class="tsd-signature-type">Dictionary</a><span class="tsd-signature-symbol">&lt;</span><a href="fsmevent.html" class="tsd-signature-type">FSMEvent</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">AI</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Dictionary&lt;AI,Dictionary&lt;FSMEvent, AI&gt;&gt;()</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in xgd-finite-state-machine.ts:201</li>
-					</ul>
-				</aside>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-				<a name="id" class="tsd-anchor"></a>
-				<h3>id</h3>
-				<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-				<aside class="tsd-sources">
-					<p>Inherited from <a href="thing.html">Thing</a>.<a href="thing.html#id">id</a></p>
-					<ul>
-						<li>Defined in xgd-finite-state-machine.ts:30</li>
-					</ul>
-				</aside>
-			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-				<a name="state" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagProtected">Protected</span> state</h3>
-				<div class="tsd-signature tsd-kind-icon">state<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">AI</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+				<a name="_currentstate" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagProtected">Protected</span> _current<wbr>State</h3>
+				<div class="tsd-signature tsd-kind-icon">_current<wbr>State<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">AI</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">any</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in xgd-finite-state-machine.ts:200</li>
+						<li>Defined in <a href="https://github.com/xgdfalcon/xgd-finite-state-machine/blob/425ef8f/src/xgd-finite-state-machine.ts#L210">xgd-finite-state-machine.ts:210</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+				<a name="_transitions" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagPrivate">Private</span> _transitions</h3>
+				<div class="tsd-signature tsd-kind-icon">_transitions<span class="tsd-signature-symbol">:</span> <a href="dictionary.html" class="tsd-signature-type">Dictionary</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">AI</span><span class="tsd-signature-symbol">, </span><a href="dictionary.html" class="tsd-signature-type">Dictionary</a><span class="tsd-signature-symbol">&lt;</span><a href="fsmevent.html" class="tsd-signature-type">FSMEvent</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">AI</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Dictionary&lt;AI,Dictionary&lt;FSMEvent, AI&gt;&gt;()</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/xgdfalcon/xgd-finite-state-machine/blob/425ef8f/src/xgd-finite-state-machine.ts#L211">xgd-finite-state-machine.ts:211</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -1123,16 +1041,16 @@ img { max-width: 100%; }
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Methods</h2>
 			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-				<a name="addedge" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagProtected">Protected</span> add<wbr>Edge</h3>
+				<a name="addtransition" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagProtected">Protected</span> add<wbr>Transition</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-					<li class="tsd-signature tsd-kind-icon">add<wbr>Edge<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">AI</span>, ev<span class="tsd-signature-symbol">: </span><a href="fsmevent.html" class="tsd-signature-type">FSMEvent</a>, target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">AI</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					<li class="tsd-signature tsd-kind-icon">add<wbr>Transition<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">AI</span>, ev<span class="tsd-signature-symbol">: </span><a href="fsmevent.html" class="tsd-signature-type">FSMEvent</a>, target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">AI</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in xgd-finite-state-machine.ts:205</li>
+								<li>Defined in <a href="https://github.com/xgdfalcon/xgd-finite-state-machine/blob/425ef8f/src/xgd-finite-state-machine.ts#L216">xgd-finite-state-machine.ts:216</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1162,7 +1080,7 @@ img { max-width: 100%; }
 						<aside class="tsd-sources">
 							<p>Implementation of <a href="../interfaces/ieventsink.html">IEventSink</a>.<a href="../interfaces/ieventsink.html#castevent">castEvent</a></p>
 							<ul>
-								<li>Defined in xgd-finite-state-machine.ts:213</li>
+								<li>Defined in <a href="https://github.com/xgdfalcon/xgd-finite-state-machine/blob/425ef8f/src/xgd-finite-state-machine.ts#L226">xgd-finite-state-machine.ts:226</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1172,171 +1090,6 @@ img { max-width: 100%; }
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-				<a name="hasownproperty" class="tsd-anchor"></a>
-				<h3>has<wbr>Own<wbr>Property</h3>
-				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-					<li class="tsd-signature tsd-kind-icon">has<wbr>Own<wbr>Property<span class="tsd-signature-symbol">(</span>v<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PropertyKey</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<p>Inherited from Object.hasOwnProperty</p>
-							<ul>
-								<li>Defined in /Users/xgdfalcon/Documents/Projects/peregrine/xgd-finite-state-machine/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:137</li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Determines whether an object has a property with the specified name.</p>
-							</div>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>v: <span class="tsd-signature-type">PropertyKey</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>A property name.</p>
-								</div>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-				<a name="isprototypeof" class="tsd-anchor"></a>
-				<h3>is<wbr>Prototype<wbr>Of</h3>
-				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-					<li class="tsd-signature tsd-kind-icon">is<wbr>Prototype<wbr>Of<span class="tsd-signature-symbol">(</span>v<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<p>Inherited from Object.isPrototypeOf</p>
-							<ul>
-								<li>Defined in /Users/xgdfalcon/Documents/Projects/peregrine/xgd-finite-state-machine/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:143</li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Determines whether an object exists in another object&#39;s prototype chain.</p>
-							</div>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>v: <span class="tsd-signature-type">Object</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>Another object whose prototype chain is to be checked.</p>
-								</div>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-				<a name="propertyisenumerable" class="tsd-anchor"></a>
-				<h3>property<wbr>IsEnumerable</h3>
-				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-					<li class="tsd-signature tsd-kind-icon">property<wbr>IsEnumerable<span class="tsd-signature-symbol">(</span>v<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PropertyKey</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<p>Inherited from Object.propertyIsEnumerable</p>
-							<ul>
-								<li>Defined in /Users/xgdfalcon/Documents/Projects/peregrine/xgd-finite-state-machine/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:149</li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Determines whether a specified property is enumerable.</p>
-							</div>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>v: <span class="tsd-signature-type">PropertyKey</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>A property name.</p>
-								</div>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-				<a name="tolocalestring" class="tsd-anchor"></a>
-				<h3>to<wbr>Locale<wbr>String</h3>
-				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-					<li class="tsd-signature tsd-kind-icon">to<wbr>Locale<wbr>String<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<p>Inherited from Object.toLocaleString</p>
-							<ul>
-								<li>Defined in /Users/xgdfalcon/Documents/Projects/peregrine/xgd-finite-state-machine/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:128</li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Returns a date converted to a string using the current locale.</p>
-							</div>
-						</div>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-				<a name="tostring" class="tsd-anchor"></a>
-				<h3>to<wbr>String</h3>
-				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-					<li class="tsd-signature tsd-kind-icon">to<wbr>String<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<p>Inherited from Object.toString</p>
-							<ul>
-								<li>Defined in /Users/xgdfalcon/Documents/Projects/peregrine/xgd-finite-state-machine/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:125</li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Returns a string representation of an object.</p>
-							</div>
-						</div>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-				<a name="valueof" class="tsd-anchor"></a>
-				<h3>value<wbr>Of</h3>
-				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-					<li class="tsd-signature tsd-kind-icon">value<wbr>Of<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<p>Inherited from Object.valueOf</p>
-							<ul>
-								<li>Defined in /Users/xgdfalcon/Documents/Projects/peregrine/xgd-finite-state-machine/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:131</li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Returns the primitive value of the specified object.</p>
-							</div>
-						</div>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Object</span></h4>
 					</li>
 				</ul>
 			</section>

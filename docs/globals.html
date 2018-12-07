@@ -909,14 +909,11 @@ img { max-width: 100%; }
 </header>
 <nav class="tsd-navigation secondary">
 	<ul>
-		<li class=" tsd-kind-class tsd-has-type-parameter">
-			<a href="classes/automatonbase.html" class="tsd-kind-icon">Automaton<wbr>Base</a>
+		<li class=" tsd-kind-class">
+			<a href="classes/automationinterface.html" class="tsd-kind-icon">Automation<wbr>Interface</a>
 		</li>
 		<li class=" tsd-kind-class tsd-has-type-parameter">
 			<a href="classes/dictionary.html" class="tsd-kind-icon">Dictionary</a>
-		</li>
-		<li class=" tsd-kind-class">
-			<a href="classes/error_code.html" class="tsd-kind-icon">ERROR_<wbr>CODE</a>
 		</li>
 		<li class=" tsd-kind-class">
 			<a href="classes/fsmerror.html" class="tsd-kind-icon">FSMError</a>
@@ -924,11 +921,14 @@ img { max-width: 100%; }
 		<li class=" tsd-kind-class">
 			<a href="classes/fsmevent.html" class="tsd-kind-icon">FSMEvent</a>
 		</li>
+		<li class=" tsd-kind-class">
+			<a href="classes/fsm_error_code.html" class="tsd-kind-icon">FSM_<wbr>ERROR_<wbr>CODE</a>
+		</li>
 		<li class=" tsd-kind-class tsd-has-type-parameter">
 			<a href="classes/statebase.html" class="tsd-kind-icon">State<wbr>Base</a>
 		</li>
-		<li class=" tsd-kind-class">
-			<a href="classes/thing.html" class="tsd-kind-icon">Thing</a>
+		<li class=" tsd-kind-class tsd-has-type-parameter">
+			<a href="classes/statemachinecontext.html" class="tsd-kind-icon">State<wbr>Machine<wbr>Context</a>
 		</li>
 		<li class=" tsd-kind-interface tsd-has-type-parameter">
 			<a href="interfaces/idictionary.html" class="tsd-kind-icon">IDictionary</a>
@@ -940,6 +940,9 @@ img { max-width: 100%; }
 			<a href="interfaces/xgdfinitestatemachine.html" class="tsd-kind-icon">XGDFinite<wbr>State<wbr>Machine</a>
 		</li>
 		<li class=" tsd-kind-function tsd-is-not-exported">
+			<a href="globals.html#exists" class="tsd-kind-icon">EXISTS</a>
+		</li>
+		<li class=" tsd-kind-function tsd-is-not-exported">
 			<a href="globals.html#generateid" class="tsd-kind-icon">generateID</a>
 		</li>
 	</ul>
@@ -947,7 +950,32 @@ img { max-width: 100%; }
 <div class="container container-main">
 	<div class="content-wrap">
 		<div class="tsd-panel tsd-typography">
+			<blockquote>
+				<h2 id="-status-in-development">🛠 Status: In Development</h2>
+				<p>xgd-finite-state-machine is currently in development. A 1.0 release is expected by end of year 2018.</p>
+			</blockquote>
 			<h1 id="xgd-finite-state-machine">xgd-finite-state-machine</h1>
+			<p>Efficient and simple state machines in typescript.</p>
+			<h2 id="documentation">Documentation</h2>
+			<p>Full documentation is available at TBP.</p>
+			<h2 id="overview">Overview</h2>
+			<p>The XGD Finite State Machine provides a typescript implementation of the State Machine Design Pattern as presented in <a href="http://community.wvu.edu/~hhammar/rts/adv%20rts/statecharts%20patterns%20papers%20and%20%20examples/paper%20on%20state%20pattern%20B31-full.pdf">State Machine Design Pattern</a>.</p>
+			<p>Project created using the <a href="https://github.com/alexjoverm/typescript-library-starter">Typescript Library Starter</a>.</p>
+			<pre><code class="language-javascript"><span class="hljs-keyword">import</span> {
+  FSM_ERROR_CODE,
+  StateBase,
+  StateMachineContext,
+  FSMEvent,
+  IEventSink,
+  FSMError,
+  AutomationInterface
+} <span class="hljs-keyword">from</span> <span class="hljs-string">'../src/xgd-finite-state-machine'</span>;</code></pre>
+			<h2 id="todos">TODOs</h2>
+			<ul>
+				<li><input disabled="" type="checkbox"> Complete 100% coverage tests.</li>
+				<li><input disabled="" type="checkbox"> Povide more examples.</li>
+			</ul>
+			<p>&copy; <a href="https://xgdfalcon.com">XGDFalcon&reg;</a></p>
 		</div>
 		<section class="tsd-panel-group tsd-index-group">
 			<h2>Index</h2>
@@ -956,13 +984,13 @@ img { max-width: 100%; }
 					<section class="tsd-index-section ">
 						<h3>Classes</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/automatonbase.html" class="tsd-kind-icon">Automaton<wbr>Base</a></li>
+							<li class="tsd-kind-class"><a href="classes/automationinterface.html" class="tsd-kind-icon">Automation<wbr>Interface</a></li>
 							<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/dictionary.html" class="tsd-kind-icon">Dictionary</a></li>
-							<li class="tsd-kind-class"><a href="classes/error_code.html" class="tsd-kind-icon">ERROR_<wbr>CODE</a></li>
 							<li class="tsd-kind-class"><a href="classes/fsmerror.html" class="tsd-kind-icon">FSMError</a></li>
 							<li class="tsd-kind-class"><a href="classes/fsmevent.html" class="tsd-kind-icon">FSMEvent</a></li>
+							<li class="tsd-kind-class"><a href="classes/fsm_error_code.html" class="tsd-kind-icon">FSM_<wbr>ERROR_<wbr>CODE</a></li>
 							<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/statebase.html" class="tsd-kind-icon">State<wbr>Base</a></li>
-							<li class="tsd-kind-class"><a href="classes/thing.html" class="tsd-kind-icon">Thing</a></li>
+							<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/statemachinecontext.html" class="tsd-kind-icon">State<wbr>Machine<wbr>Context</a></li>
 						</ul>
 					</section>
 					<section class="tsd-index-section ">
@@ -976,6 +1004,7 @@ img { max-width: 100%; }
 					<section class="tsd-index-section tsd-is-not-exported">
 						<h3>Functions</h3>
 						<ul class="tsd-index-list">
+							<li class="tsd-kind-function tsd-is-not-exported"><a href="globals.html#exists" class="tsd-kind-icon">EXISTS</a></li>
 							<li class="tsd-kind-function tsd-is-not-exported"><a href="globals.html#generateid" class="tsd-kind-icon">generateID</a></li>
 						</ul>
 					</section>
@@ -984,6 +1013,29 @@ img { max-width: 100%; }
 		</section>
 		<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 			<h2>Functions</h2>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-is-not-exported">
+				<a name="exists" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> EXISTS</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-is-not-exported">
+					<li class="tsd-signature tsd-kind-icon">EXISTS<span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/xgdfalcon/xgd-finite-state-machine/blob/425ef8f/src/xgd-finite-state-machine.ts#L25">xgd-finite-state-machine.ts:25</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>item: <span class="tsd-signature-type">any</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+					</li>
+				</ul>
+			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-is-not-exported">
 				<a name="generateid" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagConst">Const</span> generateID</h3>
@@ -994,7 +1046,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in xgd-finite-state-machine.ts:15</li>
+								<li>Defined in <a href="https://github.com/xgdfalcon/xgd-finite-state-machine/blob/425ef8f/src/xgd-finite-state-machine.ts#L15">xgd-finite-state-machine.ts:15</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">

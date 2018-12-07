@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ERROR_CODE | @xgd/finite-state-machine</title>
+	<title>FSM_ERROR_CODE | @xgd/finite-state-machine</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type="text/css">/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
@@ -909,19 +909,11 @@ img { max-width: 100%; }
 </header>
 <nav class="tsd-navigation secondary">
 	<ul>
-		<li class=" tsd-kind-class tsd-has-type-parameter">
-			<a href="automatonbase.html" class="tsd-kind-icon">Automaton<wbr>Base</a>
+		<li class=" tsd-kind-class">
+			<a href="automationinterface.html" class="tsd-kind-icon">Automation<wbr>Interface</a>
 		</li>
 		<li class=" tsd-kind-class tsd-has-type-parameter">
 			<a href="dictionary.html" class="tsd-kind-icon">Dictionary</a>
-		</li>
-		<li class="current tsd-kind-class">
-			<a href="error_code.html" class="tsd-kind-icon">ERROR_<wbr>CODE</a>
-			<ul>
-				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a href="error_code.html#creation_error" class="tsd-kind-icon">CREATION_<wbr>ERROR</a>
-				</li>
-			</ul>
 		</li>
 		<li class=" tsd-kind-class">
 			<a href="fsmerror.html" class="tsd-kind-icon">FSMError</a>
@@ -929,11 +921,22 @@ img { max-width: 100%; }
 		<li class=" tsd-kind-class">
 			<a href="fsmevent.html" class="tsd-kind-icon">FSMEvent</a>
 		</li>
+		<li class="current tsd-kind-class">
+			<a href="fsm_error_code.html" class="tsd-kind-icon">FSM_<wbr>ERROR_<wbr>CODE</a>
+			<ul>
+				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a href="fsm_error_code.html#creation_error" class="tsd-kind-icon">CREATION_<wbr>ERROR</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a href="fsm_error_code.html#event_error" class="tsd-kind-icon">EVENT_<wbr>ERROR</a>
+				</li>
+			</ul>
+		</li>
 		<li class=" tsd-kind-class tsd-has-type-parameter">
 			<a href="statebase.html" class="tsd-kind-icon">State<wbr>Base</a>
 		</li>
-		<li class=" tsd-kind-class">
-			<a href="thing.html" class="tsd-kind-icon">Thing</a>
+		<li class=" tsd-kind-class tsd-has-type-parameter">
+			<a href="statemachinecontext.html" class="tsd-kind-icon">State<wbr>Machine<wbr>Context</a>
 		</li>
 		<li class=" tsd-kind-interface tsd-has-type-parameter">
 			<a href="../interfaces/idictionary.html" class="tsd-kind-icon">IDictionary</a>
@@ -943,6 +946,9 @@ img { max-width: 100%; }
 		</li>
 		<li class=" tsd-kind-interface">
 			<a href="../interfaces/xgdfinitestatemachine.html" class="tsd-kind-icon">XGDFinite<wbr>State<wbr>Machine</a>
+		</li>
+		<li class=" tsd-kind-function tsd-is-not-exported">
+			<a href="../globals.html#exists" class="tsd-kind-icon">EXISTS</a>
 		</li>
 		<li class=" tsd-kind-function tsd-is-not-exported">
 			<a href="../globals.html#generateid" class="tsd-kind-icon">generateID</a>
@@ -963,7 +969,7 @@ img { max-width: 100%; }
 			<h3>Hierarchy</h3>
 			<ul class="tsd-hierarchy">
 				<li>
-					<span class="target">ERROR_CODE</span>
+					<span class="target">FSM_ERROR_CODE</span>
 				</li>
 			</ul>
 		</section>
@@ -974,7 +980,8 @@ img { max-width: 100%; }
 					<section class="tsd-index-section ">
 						<h3>Properties</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="error_code.html#creation_error" class="tsd-kind-icon">CREATION_<wbr>ERROR</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="fsm_error_code.html#creation_error" class="tsd-kind-icon">CREATION_<wbr>ERROR</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="fsm_error_code.html#event_error" class="tsd-kind-icon">EVENT_<wbr>ERROR</a></li>
 						</ul>
 					</section>
 				</div>
@@ -988,7 +995,17 @@ img { max-width: 100%; }
 				<div class="tsd-signature tsd-kind-icon">CREATION_<wbr>ERROR<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;CREATION_ERROR&quot;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in xgd-finite-state-machine.ts:42</li>
+						<li>Defined in <a href="https://github.com/xgdfalcon/xgd-finite-state-machine/blob/425ef8f/src/xgd-finite-state-machine.ts#L33">xgd-finite-state-machine.ts:33</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+				<a name="event_error" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> EVENT_<wbr>ERROR</h3>
+				<div class="tsd-signature tsd-kind-icon">EVENT_<wbr>ERROR<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;EVENT_ERROR&quot;</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/xgdfalcon/xgd-finite-state-machine/blob/425ef8f/src/xgd-finite-state-machine.ts#L34">xgd-finite-state-machine.ts:34</a></li>
 					</ul>
 				</aside>
 			</section>

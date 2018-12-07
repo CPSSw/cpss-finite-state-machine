@@ -22,24 +22,16 @@ const generateID = () => {
   return e;
 };
 
-/**
- * Base class for everything
- */
-export class Thing extends Object {
-  [key: string]: any;
-  public id: string;
-  public constructor() {
-    super();
-    this.id = generateID();
-  }
-}
-
+const EXISTS = (item: any): boolean => {
+  return item !== null && typeof item !== 'undefined';
+};
 /**
  * Enumerations of FSM error codes.
  * Can be extended to add special codes.
  */
-export class ERROR_CODE {
+export class FSM_ERROR_CODE {
   static CREATION_ERROR: string = 'CREATION_ERROR';
+  static EVENT_ERROR: string = 'EVENT_ERROR';
 }
 
 /**
@@ -60,8 +52,10 @@ export interface IDictionary<TKey, T> {
  * Defines s `Dictionary` class as
  * typescript does not provide one
  */
-export class Dictionary<TKey extends Thing, T extends Thing> extends Thing
-  implements IDictionary<TKey, T> {
+export class Dictionary<TKey extends any, T> implements IDictionary<TKey, T> {
+  [key: string]: any;
+  public id: string = generateID();
+
   private _items: { [index: string]: T } = {};
   private _keys: { [index: string]: TKey } = {};
 
@@ -142,35 +136,54 @@ export interface IEventSink {
   castEvent(event: FSMEvent): void;
 }
 
-export class FSMEvent extends Thing {
-  private _name: string = 'unknown';
+export abstract class AutomationInterface {
+  [key: string]: any;
+  public id: string;
+  constructor(id?: string) {
+    if (id) {
+      this.id = id;
+    } else {
+      this.id = generateID();
+    }
+  }
+}
+
+export class FSMEvent {
+  private _name: string = 'undefined';
 
   public constructor(name: string) {
-    super();
     Object.setPrototypeOf(this, new.target.prototype);
     if (name === null)
-      throw new FSMError(ERROR_CODE.CREATION_ERROR, 'constructor', 'FSMEvent', "'name' Undefined");
+      throw new FSMError(
+        FSM_ERROR_CODE.CREATION_ERROR,
+        'constructor',
+        'FSMEvent',
+        "'name' Undefined"
+      );
     this._name = name;
   }
 
-  public get name(): string | null {
+  public get id(): string {
+    return this._name;
+  }
+  public get name(): string {
     return this._name;
   }
 }
 
 /**
- * class for all state classes.
+ * Base class for states.
+ * <AI> provides the interface being automated.
  */
-export abstract class StateBase<AI> extends Thing {
+export abstract class StateBase<AI extends AutomationInterface> {
   protected _automaton: AI | null = null;
   protected _eventSink: IEventSink | null = null;
-
+  public id: string;
   public constructor(automaton: AI, eventSink: IEventSink) {
-    super();
     Object.setPrototypeOf(this, new.target.prototype);
     if (automaton === null || eventSink === null) {
       throw new FSMError(
-        ERROR_CODE.CREATION_ERROR,
+        FSM_ERROR_CODE.CREATION_ERROR,
         'constructor',
         'StateBase',
         "'automaton' or 'eventSink' Undefined"
@@ -178,6 +191,7 @@ export abstract class StateBase<AI> extends Thing {
     }
     this._automaton = automaton;
     this._eventSink = eventSink;
+    this.id = Object.getPrototypeOf(this).constructor.name;
   }
 
   protected castEvent(ev: FSMEvent): void {
@@ -188,31 +202,34 @@ export abstract class StateBase<AI> extends Thing {
 }
 
 /**
- * base class for all automata. It
- * provides a method addEdge for its subclasses.
- * In addition AutomatonBase implements IEventSink:
+ * Base class for all state machines. It provides
+ * a method to add transitions for its subclasses.
+ * In addition StateMachineContext implements IEventSink:
  */
-export abstract class AutomatonBase<AI extends Thing> extends Thing implements IEventSink {
-  constructor() {
-    super();
-  }
-
-  protected state: AI | null = null;
-  private edges: Dictionary<AI, Dictionary<FSMEvent, AI>> = new Dictionary<
+export abstract class StateMachineContext<AI extends AutomationInterface> implements IEventSink {
+  protected _currentState: AI | any;
+  private _transitions: Dictionary<AI, Dictionary<FSMEvent, AI>> = new Dictionary<
     AI,
     Dictionary<FSMEvent, AI>
   >();
-  protected addEdge(source: AI, ev: FSMEvent, target: AI): void {
-    let row: Dictionary<FSMEvent, AI> = this.edges[source.id];
-    if (null == row) {
-      row = new Dictionary<FSMEvent, AI>();
-      this.edges.Add(source, row);
+
+  protected addTransition(source: AI, ev: FSMEvent, target: AI): void {
+    let stateTransitions: Dictionary<FSMEvent, AI> = this._transitions.Item(source);
+    if (stateTransitions === null || typeof stateTransitions === 'undefined') {
+      // Create new state
+      stateTransitions = new Dictionary<FSMEvent, AI>();
+      this._transitions.Add(source, stateTransitions);
     }
-    row.Add(ev, target);
+    stateTransitions.Add(ev, target);
   }
+
   public castEvent(ev: FSMEvent): void {
-    if (this.edges && this.state) {
-      this.state = this.edges[this.state.id][ev.id];
+    if (EXISTS(this._transitions) && EXISTS(this._currentState)) {
+      const newState: AI = this._transitions.Item(this._currentState).Item(ev);
+      if (EXISTS(newState)) {
+        this._currentState = newState;
+        console.log('NewState: ', this._currentState.id);
+      }
     }
   }
 }

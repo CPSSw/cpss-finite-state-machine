@@ -1,6 +1,6 @@
 {
   "name": "@xgd/finite-state-machine",
-  "version": "0.0.0",
+  "version": "0.9.0",
   "description": "Efficient and simple state machines in typescript.",
   "keywords": [],
   "main": "dist/xgd-finite-state-machine.umd.js",
@@ -12,7 +12,7 @@
   "author": "xgdfalcon <xgdfalcon@gmail.com>",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/xgdfalcon/xgd-finite-state-machine.git"
   },
   "license": "MIT",
   "engines": {
@@ -115,8 +115,5 @@
     "tslint-config-standard": "^8.0.1",
     "typedoc": "^0.12.0",
     "typescript": "^3.0.3"
-  },
-  "peerDependencies": {
-    "moment": "^2.22.2"
   }
 }
