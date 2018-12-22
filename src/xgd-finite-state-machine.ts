@@ -7,19 +7,13 @@
  * Peregrine Business Management package.
  */
 
-import * as crypto from 'crypto';
-
 /**
  * Generates a unique ID for a `Thing`
  */
 const generateID = () => {
-  const b = crypto.randomBytes(12);
-  const s = b.toString('base64');
-  const e = s
-    .replace(/\+/g, '-')
-    .replace(/\//g, '_')
-    .replace(/=/g, '');
-  return e;
+  return Math.random()
+    .toString(36)
+    .substring(7);
 };
 
 const EXISTS = (item: any): boolean => {
