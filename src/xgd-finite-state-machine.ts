@@ -1,7 +1,7 @@
 /**
  * @license
- * Copyright (c) 2018 XGDFalcon. All Rights Served.
- * This code may only be used under the license found at https://xgdfalcon.com/license
+ * Copyright (c) 2019 XGDFalcon®. All Rights Reserved.
+ * This code may only be used under the license found in the included LICENSE.md
  *
  * XGDFalcon LLC retains all intellectual property rights to the code distributed as part of the
  * Peregrine Business Management package.

@@ -1,5 +1,5 @@
 > ## 🛠 Status: In Development
-> xgd-finite-state-machine is currently in development. A 1.0 release is expected by end of year 2018.
+> xgd-finite-state-machine is currently in development. A 1.0 release is expected by mid-year of year 2019.
 
 # xgd-finite-state-machine
 Efficient and simple state machines in typescript.
@@ -32,4 +32,4 @@ import {
 - [ ] Complete 100% coverage tests.
 - [ ] Povide more examples.
 
-&copy; [XGDFalcon&reg;](https://xgdfalcon.com)
+&copy; [XGDFalcon®](https://xgdfalcon.com)
