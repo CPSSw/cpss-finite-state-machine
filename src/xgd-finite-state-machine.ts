@@ -185,7 +185,8 @@ export abstract class StateBase<AI extends AutomationInterface> {
     }
     this._automaton = automaton;
     this._eventSink = eventSink;
-    this.id = Object.getPrototypeOf(this).constructor.name;
+    // this.id = Object.getPrototypeOf(this).constructor.name;
+    this.id = generateID();
   }
 
   protected castEvent(ev: FSMEvent): void {
