@@ -222,7 +222,7 @@ export abstract class StateMachineContext<AI extends AutomationInterface> implem
       const newState: AI = this._transitions.Item(this._currentState).Item(ev);
       if (EXISTS(newState)) {
         this._currentState = newState;
-        console.log('NewState: ', this._currentState.id);
+        console.log(`NewState: ${this._currentState.id}`);
       }
     }
   }
