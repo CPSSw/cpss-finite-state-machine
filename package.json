@@ -1,6 +1,6 @@
 {
   "name": "@xgd/finite-state-machine",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Efficient and simple state machines in typescript.",
   "keywords": [],
   "main": "dist/xgd-finite-state-machine.umd.js",
