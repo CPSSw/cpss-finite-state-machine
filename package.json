@@ -1,22 +1,22 @@
 {
-  "name": "@xgd/finite-state-machine",
+  "name": "@cpss/finite-state-machine",
   "version": "1.0.2",
   "description": "Efficient and simple state machines in typescript.",
   "keywords": [],
-  "main": "dist/xgd-finite-state-machine.umd.js",
-  "module": "dist/xgd-finite-state-machine.es5.js",
-  "typings": "dist/types/xgd-finite-state-machine.d.ts",
+  "main": "dist/cpss-finite-state-machine.umd.js",
+  "module": "dist/cpss-finite-state-machine.es5.js",
+  "typings": "dist/types/cpss-finite-state-machine.d.ts",
   "files": [
     "dist"
   ],
   "author": "xgdfalcon <xgdfalcon@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/xgdfalcon/xgd-finite-state-machine.git"
+    "url": "https://github.com/CPSSw/cpss-finite-state-machine"
   },
   "license": "MIT",
   "engines": {
-    "node": ">=6.0.0"
+    "node": ">=8.0.0"
   },
   "scripts": {
     "lint": "tslint  --project tsconfig.json -t codeFrame 'src/**/*.ts' 'test/**/*.ts'",

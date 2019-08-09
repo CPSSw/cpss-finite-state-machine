@@ -3,8 +3,8 @@
  * Copyright (c) 2019 XGDFalcon®. All Rights Reserved.
  * This code may only be used under the license found in the included LICENSE.md
  *
- * XGDFalcon LLC retains all intellectual property rights to the code distributed as part of the
- * Peregrine Business Management package.
+ * XGDFalcon LLC retains all intellectual property rights to the code distributed
+ * as part of the Control Point System Software (CPSS) Package.
  */
 
 /**
@@ -23,7 +23,7 @@ const EXISTS = (item: any): boolean => {
  * Enumerations of FSM error codes.
  * Can be extended to add special codes.
  */
-export class FSM_ERROR_CODE {
+export class FsmErrorCode {
   static CREATION_ERROR: string = 'CREATION_ERROR';
   static EVENT_ERROR: string = 'EVENT_ERROR';
 }
@@ -71,7 +71,7 @@ export class Dictionary<TKey extends any, T> implements IDictionary<TKey, T> {
   }
 
   public Remove(key: TKey): T {
-    var val = this._items[key.id];
+    const val = this._items[key.id];
     delete this._items[key.id];
     delete this._keys[key.id];
     this.count--;
@@ -83,8 +83,8 @@ export class Dictionary<TKey extends any, T> implements IDictionary<TKey, T> {
   }
 
   public Keys(): TKey[] {
-    var keySet: TKey[] = [];
-    for (var prop in this._keys) {
+    const keySet: TKey[] = [];
+    for (const prop in this._keys) {
       if (this._keys.hasOwnProperty(prop)) {
         keySet.push(this._keys[prop]);
       }
@@ -93,9 +93,9 @@ export class Dictionary<TKey extends any, T> implements IDictionary<TKey, T> {
   }
 
   public Values(): T[] {
-    var values: T[] = [];
+    const values: T[] = [];
 
-    for (var prop in this._items) {
+    for (const prop in this._items) {
       if (this._items.hasOwnProperty(prop)) {
         values.push(this._items[prop]);
       }
@@ -149,7 +149,7 @@ export class FSMEvent {
     Object.setPrototypeOf(this, new.target.prototype);
     if (name === null)
       throw new FSMError(
-        FSM_ERROR_CODE.CREATION_ERROR,
+        FsmErrorCode.CREATION_ERROR,
         'constructor',
         'FSMEvent',
         "'name' Undefined"
@@ -177,7 +177,7 @@ export abstract class StateBase<AI extends AutomationInterface> {
     Object.setPrototypeOf(this, new.target.prototype);
     if (automaton === null || eventSink === null) {
       throw new FSMError(
-        FSM_ERROR_CODE.CREATION_ERROR,
+        FsmErrorCode.CREATION_ERROR,
         'constructor',
         'StateBase',
         "'automaton' or 'eventSink' Undefined"

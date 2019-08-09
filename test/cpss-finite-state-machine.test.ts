@@ -3,8 +3,8 @@
  * Copyright (c) 2019 XGDFalcon®. All Rights Reserved.
  * This code may only be used under the license found in the included LICENSE.md
  *
- * XGDFalcon LLC retains all intellectual property rights to the code distributed as part of the
- * Peregrine Business Management package.
+ * XGDFalcon LLC retains all intellectual property rights to the code distributed
+ * as part of the Control Point System Software (CPSS) Package.
  */
 
 import {
@@ -15,7 +15,7 @@ import {
   IEventSink,
   FSMError,
   AutomationInterface
-} from '../src/xgd-finite-state-machine';
+} from '../src/cpss-finite-state-machine';
 
 // import { describe, it, expect } from 'jest';
 
