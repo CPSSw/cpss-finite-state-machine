@@ -17,7 +17,7 @@ Project created using the [Typescript Library Starter](https://github.com/alexjo
 
 ```javascript
 import {
-  FSM_ERROR_CODE,
+  FsmErrorCode,
   StateBase,
   StateMachineContext,
   FSMEvent,

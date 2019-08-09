@@ -9,6 +9,7 @@
   "files": [
     "dist"
   ],
+  "private": false,
   "author": "xgdfalcon <xgdfalcon@gmail.com>",
   "repository": {
     "type": "git",

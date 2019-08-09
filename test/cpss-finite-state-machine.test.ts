@@ -8,7 +8,7 @@
  */
 
 import {
-  FSM_ERROR_CODE,
+  FsmErrorCode,
   StateBase,
   StateMachineContext,
   FSMEvent,
@@ -24,7 +24,7 @@ class ConnectionEvents {
   public static ERROR: FSMEvent = new FSMEvent('ERROR');
   public static DISCONNECT: FSMEvent = new FSMEvent('DISCONNECT');
 }
-class ConnectionErrors extends FSM_ERROR_CODE {
+class ConnectionErrors extends FsmErrorCode {
   public static CONNECTION_FAILURE = 'CONNECTION_FAILURE';
 }
 interface IConnection extends AutomationInterface {
